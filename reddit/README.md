@@ -1,51 +1,23 @@
-# Reddit Image Scraper
+# Reddit Webscraper
 
-A tool to scrape images from Reddit subreddits and extract them from a SQLite database.
+simple instructions, pay attention
 
-## Installation
+---
+
+install the requirements from the requirements.txt file
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## Usage
-
-### Scraping Images
-
-Run the scraper to fetch posts and images from subreddits:
-
+once those r done, just run
 ```bash
+python reddit.py
 python scrape.py
 ```
 
-You'll be prompted to enter:
-- Subreddit(s) to scrape (comma-separated for multiple)
-- Database name (without .db extension)
+when u run the second script it'll ask for (a) subreddit name(s)
 
-Example:
-```
-put the subreddit(s) u want to scrape (comma separated): wallpapers, earthporn
-Enter database name (without .db extension otherwise you'll jus have 'name.db.db'): reddit_images
-```
+u put whatever u want and then the name of the db, so like 'test.db' or whatever
 
-### Extracting Images
-
-Extract images from the database to files:
-
-```bash
-python extract.py <database_path>
-```
-
-Example:
-```bash
-python extract.py reddit_images.db
-```
-
-Images will be saved to the `images/` directory with filenames like `post_123.png`.
-
-## Files
-
-- `scrape.py` - Main scraper that fetches Reddit posts and saves to database
-- `extract.py` - Extracts images from the database to files
-- `write_db.py` - Database handler class
-- `reddit.py` - Reddit HTML parser
+if it doesnt work then ur probably just a dumbass like **london**, YOU HEAR ME LONDON?? YOU FUCKING DUMBASS
