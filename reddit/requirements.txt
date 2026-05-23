@@ -1,0 +1,4 @@
+aiosqlite
+httpx
+colorama
+beautifulsoup4
